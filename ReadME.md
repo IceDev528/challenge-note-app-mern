@@ -17,11 +17,15 @@ The data should be stored in MongoDB.
 # How to run the project
 
 ## Server side
+You should run the mongodb first to connect with the server.
+
+```
 npm install
 npm run start
+```
 
 ## Client side
+```
 npm install
 npm run start
-
-You should run the mongodb first to connect mongodb.
+```
