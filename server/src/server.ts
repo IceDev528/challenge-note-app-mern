@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import { noteRoutes } from "./routes/note.routes";
 
 const app = express();
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 8080;
 
 // Connect to MongoDB
 const uri = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/testdatabase";

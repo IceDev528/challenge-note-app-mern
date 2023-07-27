@@ -3,7 +3,7 @@ import * as mongoose from "mongoose";
 export interface INote extends mongoose.Document {
   title: string;
   description: string;
-  createdDate: date;
+  createdDate: Date;
   isArchived: boolean;
 }
 

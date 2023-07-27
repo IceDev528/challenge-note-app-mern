@@ -71,23 +71,3 @@ export async function deleteNote(req: Request, res: Response) {
     res.status(500).send(error);
   }
 }
-
-export async function updateNoteArchieve(req: Request, res: Response) {
-  const id = req.params.id;
-  const noteUpdates: INote = req.body;
-
-  try {
-    const note = await Note.findByIdAndUpdate(id, noteUpdates, {
-      new: true,
-    });
-
-    if (!note) {
-      res.status(404).send("Note not found");
-      return;
-    }
-
-    res.status(200).json(note);
-  } catch (error) {
-    res.status(400).send(error);
-  }
-}
